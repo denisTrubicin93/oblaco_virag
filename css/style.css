@@ -1,0 +1,303 @@
+/*GENERAL SETTINGS START*/
+body{
+	background: #fff;
+	margin: 0 auto;
+	font: 10px/1 'Roboto Condensed', arial, helvetica, sans-serif;
+}
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none; 							
+}
+img{
+	max-width: 100%;
+	border: none;
+}
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active,
+a:visited{
+	text-decoration: none;
+	outline: none;
+	color: inherit;
+}
+ul, ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+input, button, textarea{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+/*GENERAL SETTINGS END*/
+
+/*GENERAL STYLE*/
+.btn{
+	text-transform: uppercase;
+	border-radius: 3px;
+	font-size: 1.2em;
+	line-height: 1.6;
+	padding: 7px;
+}
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn:active:focus{
+	background: inherit;
+	border-color: inherit;
+	color: inherit;
+	outline: none;
+}
+.btn.btn-default, 
+.btn.btn-default:active:focus{
+	background: #2470a9;
+	/*border-color: #2470a9;*/
+	color: #fff;
+}
+.btn.btn-default{
+	vertical-align: middle;
+}
+.btn.btn-default:hover{
+	background: #ff8237;
+}
+
+header{
+	height: 50px;
+	background: #3484c1;
+}
+.navbar-brand, a.navbar-brand{
+	width: 245px;
+	color: #fff;
+	font-size: 2.4em;
+	background: #2470a9;
+}
+.navbar-brand span{
+	font-weight: 700;
+}
+.user-account{
+	padding-top: 5px;
+}
+.user-account .user{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 30px;
+}
+.user-account .user img{
+	width: 40px;
+	height: 40px;
+	border: 1px solid #c0c0c0;
+	margin-right: 9px;
+	vertical-align: middle;
+
+}
+.user-account .user .user-name{
+	display: inline-block;
+	vertical-align: middle;
+}
+.user-account .user .user-name h6{
+	color: #fff;
+	font-size: 1.2em;
+}
+.user-account .user .user-name span{
+	color: #fff;
+	font-size: 1em;
+}
+.logout{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: #2470a9;
+	line-height: 24px;
+	text-align: center;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: 14px;
+}
+.logout span{
+	color: #fff;
+	font-size: 1.6em;
+	line-height: 24px;
+}
+/*MAIN*/
+main{
+	padding-top: 50px;
+}
+.sidebar{
+	position: fixed;
+	width: 245px;
+	height: 100vh;
+	top: 50px;
+	left: 0;
+	background: #11202e;
+}
+.sidebar ul li{
+	border-bottom: 1px solid #16293a;
+	vertical-align: middle;
+}
+.sidebar ul li a{
+	display: inline-block;
+	width: 100%;
+	padding: 18px 0 18px 0px;
+	color: #fff;
+	font-size: 1.4em;
+}
+.sidebar ul li a:hover{
+	background: #0a1826;
+	color: #ffeb6e;
+}
+.sidebar ul li a:before{
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	background: url(../img/icons.png) no-repeat;
+	background-position: -20px 0;
+	vertical-align: middle;
+	margin: 0 10px;
+}
+.sidebar ul li:nth-child(2) a:before{background-position: -40px 0;}
+.sidebar ul li:nth-child(3) a:before{background-position: -60px 0;}
+.sidebar ul li:nth-child(4) a:before{background-position: -80px 0;}
+.sidebar ul li:nth-child(5) a:before{background-position: -100px 0;}
+.sidebar ul li:nth-child(6) a:before{background-position: -120px 0;}
+.sidebar ul li:nth-child(7) a:before{background-position: -140px 0;}
+.sidebar ul li:nth-child(8) a:before{background-position: -180px 0;}
+.sidebar ul li:nth-child(9) a:before{background-position: -160px 0;}
+
+.sidebar ul li:nth-child(1) a:hover:before{background-position: -20px -20px;}
+.sidebar ul li:nth-child(2) a:hover:before{background-position: -40px -20px;}
+.sidebar ul li:nth-child(3) a:hover:before{background-position: -60px -20px;}
+.sidebar ul li:nth-child(4) a:hover:before{background-position: -80px -20px;}
+.sidebar ul li:nth-child(5) a:hover:before{background-position: -100px -20px;}
+.sidebar ul li:nth-child(6) a:hover:before{background-position: -120px -20px;}
+.sidebar ul li:nth-child(7) a:hover:before{background-position: -140px -20px;}
+.sidebar ul li:nth-child(8) a:hover:before{background-position: -180px -20px;}
+.sidebar ul li:nth-child(9) a:hover:before{background-position: -160px -20px;}
+.sidebar ul li a span.label{
+	display: inline-block;
+	width: 23px;
+	font-size: .8em;
+	font-weight: 400;
+	padding: 2px 2px 2px 6px;
+	border-radius: .25em 0 0 .25em;
+}
+.sidebar ul li a span.label-default{
+	background: #ff8237;
+	margin-top: 3px;
+}
+.content{
+	padding-left: 245px;
+}
+.content-header{
+	background: #f1f4f8;
+}
+.breadcrumb{
+	background: transparent;
+	padding: 15px;
+	margin-bottom: 0;
+}
+.breadcrumb>li>a{
+	font-size: 1.4em;
+	color: #6c6e70;
+}
+.breadcrumb>.active a{
+	font-size: 1.4em;
+	color: #333;
+}
+.breadcrumb>li>a:hover{
+	border-bottom: 1px solid #6c6e70;
+}
+.breadcrumb>li:last-child>a:hover{
+	border: none;
+	cursor: default;
+}
+.breadcrumb>li+li:before{
+	color: #333;
+    content: "\003e";
+    font-size: 1.8em;
+}
+
+.busket-wrap .btn.btn-default.arrow_1:before,
+.busket-wrap .btn.btn-default.arrow_2:before, 
+.actions-btn .btn.btn-default.arrow_3:before, 
+.actions-btn .btn.btn-default.arrow_4:before, 
+.actions-btn .btn.btn-default.cross:before{
+	content: "";
+	display: inline-block;
+	background: url(../img/sprite-icon-btn.png) no-repeat;
+	overflow: hidden;
+	background-position: -0px -0px; 
+	width: 16px; 
+	height: 16px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.busket-wrap .btn.btn-default.arrow_2:before{
+	background-position: -0px -16px;
+}
+.nav-tabs{
+	padding-left: 30px;
+	border-bottom: 2px solid #3484c1
+}
+.nav-tabs>li>a{
+	font-size: 1.2em;
+	color: #a8adaf;
+	text-transform: uppercase;
+	min-width: 130px;
+	padding: 9px 10px;
+	background: #fff;
+	border-color: #a8adaf;
+	border-bottom: none;
+	margin: 0;
+	text-align: center;
+	line-height: 1;
+}
+.nav-tabs>li{
+	margin-bottom: 0;
+}
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover{
+	background: #3484c1;
+	border-color: #3484c1;
+	color: #fff;
+}
+.busket-wrap{
+	padding-top: 7px;
+}
+.actions-btn{
+	padding: 29px 0 0 30px;
+}
+.actions-btn .btn.btn-default{
+	margin-right: 15px;
+}
+.actions-btn .btn.btn-default.arrow_3:before{
+	background-position: -0px -32px; 
+	width: 13px; 
+	height: 15px;
+}
+.actions-btn .btn.btn-default.arrow_4:before{
+	background-position: -0px -47px; 
+	width: 13px; 
+	height: 15px;
+}
+.actions-btn .btn.btn-default.cross:before{
+	background-position: -0px -62px; 
+	width: 13px; 
+	height: 13px;
+}
+/*.icon-btnplus { background-position: -0px -75px; width: 13px; height: 13px;}*/
